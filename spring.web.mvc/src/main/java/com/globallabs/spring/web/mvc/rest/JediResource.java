@@ -43,7 +43,7 @@ public class JediResource {
 
     @DeleteMapping("/api/jedi/{id}")
     public void deleteJediID(@PathVariable("id") int id){
-        jediService.getAllJedi().remove(id);
+        jediService.deleteJediID(id);
          ResponseEntity.noContent().build();
 
     }
